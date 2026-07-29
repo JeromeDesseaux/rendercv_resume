@@ -1,0 +1,171 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
+cv:
+  name: Jérôme Desseaux
+  photo: ../assets/moi.jpg
+  headline: Senior Backend Software Engineer
+  location: "Rouen"
+  email: jerome.desseaux@gmail.com
+  phone: "+33683104278"
+  website: https://app.bibliochouette.fr
+  social_networks:
+    - network: LinkedIn
+      username: jeromedesseaux
+    - network: GitHub
+      username: JeromeDesseaux
+  custom_connections:
+    - fontawesome_icon: circle-check
+      placeholder: Based in France — available for full-remote roles across France and Europe
+      url:
+  sections:
+    profile:
+      - "Senior Backend Software Engineer (Python) with 10+ years owning
+        business-critical, high-traffic platforms. Hands-on leader on distributed
+        architecture, monolith-to-microservices migrations, and transactional
+        system reliability, with daily AI-assisted engineering practice (Claude
+        Code). Mentors engineering teams while staying hands-on in design and
+        code. Seeking a full-remote Senior/Lead Backend role in France or Europe."
+
+    "Skills":
+      - label: Backend
+        details: "**Python** (Django, FastAPI, Flask), REST APIs (OpenAPI/Swagger), **Go**, C#/.NET"
+      - label: Distributed Systems
+        details: "**System design**, asynchronous processing, RabbitMQ, Celery, microservices,
+          event-driven systems, API design (REST, OAuth), **hexagonal architecture**, DDD,
+          testing (**pytest**), performance optimization"
+      - label: Leadership
+        details: "**Architecture ownership**, technical scoping, monolith-to-microservices
+          migrations, mentoring, cross-functional Product/Engineering collaboration"
+      - label: AI-Assisted Engineering
+        details: "Daily use of **Claude Code** for implementation planning, refactoring
+          and code review; RAG/LLM application design"
+      - label: Data & Cloud
+        details: "**PostgreSQL**, SQL, indexing, query optimization, caching, Redis;
+          **Docker**, Kubernetes, CI/CD (GitHub Actions, Jenkins), **Datadog**,
+          Grafana, Sentry, AWS (Amazon Web Services), Azure, GCP (Google Cloud Platform)"
+      - label: Soft Skills
+        details: "Product-minded, agile delivery (Scrum, Kanban), async remote
+          collaboration (Slack, Notion, Jira) across time zones"
+
+    "Experience":
+      - company: Back Market
+        position: Senior Software Engineer (Freelance)
+        start_date: "2025-07"
+        end_date: "2026-03"
+        location: Remote
+        highlights:
+          - Owned system design and led the incremental migration of checkout and
+            OMS (Order Management System) from a Django monolith to FastAPI, with
+            zero downtime.
+          - Rebuilt OMS refund management, increasing correct refund-amount accuracy
+            **from under 10% to nearly 100%** and eliminating major customer friction.
+          - Hardened checkout and OMS services processing **up to 1 million requests
+            per hour**, via RabbitMQ/Celery resilience (dead-letter queues) and
+            Redis-based synchronization, reducing the risk of data loss in concurrent
+            processing.
+          - Zero-downtime deployments via GitHub Actions, with Datadog/Grafana observability.
+          - Asynchronous collaboration across Europe/US.
+      - company: Lengow
+        position: Senior Software Engineer (Freelance, two engagements)
+        start_date: "2022-09"
+        end_date: "2025-06"
+        location: Remote
+        highlights:
+          - Owned backend architecture for the Octopia and TikTok Shop integrations
+            on a Django SaaS platform already connected to hundreds of marketplaces.
+          - Redesigned order processing as an n-ary tree, **cutting execution time from 45 to 3 minutes**.
+          - Led the modernization toward Docker/Kubernetes/Jenkins CI/CD,
+            **reducing developer onboarding from one week to one day**.
+          - Provided technical mentoring for a team of up to five engineers through
+            code reviews on architecture and design.
+          - Datadog monitoring and product dashboards for production observability.
+      - company: CHANEL
+        position: Technical Lead — Backend & AI Platform (Freelance)
+        start_date: "2021-03"
+        end_date: "2022-01"
+        location: Remote
+        highlights:
+          - Structured and led a team of 3 engineers.
+          - Architected an AI platform around FastAPI microservices and an asynchronous
+            REST API for voice-data processing on Azure, enabling real-time voice
+            search that cut call-center wait times to near zero.
+          - Delivered backend API features (OpenAPI/Swagger) and a C#/.NET desktop
+            client secured with OAuth, in collaboration with CHANEL's innovation lab
+            in New York; set up CI/CD and testing practices.
+      - company: Opeaz
+        position: Technical Lead (Freelance)
+        start_date: "2020-04"
+        end_date: "2021-02"
+        location: Remote
+        highlights:
+          - Built and led an international team of five engineers (France, Brazil,
+            Israel) through a monolith-to-microservices migration.
+          - Split the existing monolith architecture into a stateless backend/frontend,
+            enabling each layer to scale horizontally and independently and improving
+            release cadence.
+          - Designed data-processing pipelines (web scraping, API integration, ETL
+            flows) and optimized infrastructure, **cutting operational costs by 30%**.
+          - Defined the technical roadmap and coding standards, improving delivery
+            consistency during the company's growth phase ahead of its first funding
+            round (€1 million).
+
+    "Other Clients":
+      - name: DeepReach
+        date: Aug 2021 – Feb 2022
+        summary: "Monolith-to-microservices migration in Python on AWS, **50% faster
+          response** (2s to 1s) via caching and asynchronous processing."
+      - name: beta.gouv.fr
+        date: Feb 2022 – Jun 2022
+        summary: "Go backend, fraud-detection algorithms in a financial environment,
+          PostgreSQL optimization reducing processing time from 8 hours to 30 minutes."
+
+    earlier_experience:
+      - bullet: "**RATP** — Lead Data Scientist, Freelance (Mar 2019 – Mar 2020) —
+          Python/Spark data flows, Flask APIs and Angular interfaces for transport data."
+      - bullet: "**Caisse d'Epargne Normandie** — Lead Data Scientist, Permanent, Rouen
+          (Jul 2017 – Mar 2019) — Python for image analysis and life-event detection;
+          BPCE Group innovation award."
+      - bullet: "**Devolis** (Oct 2016 – Aug 2017) & **Invoke** (Jan 2016 – Oct 2016) —
+          Web applications and invoicing systems in C#/.NET (ASP.NET, Entity Framework,
+          SQL Server) with Angular frontends, Rouen."
+
+    education:
+      - institution: INSA Rouen
+        area: Information Systems Architecture
+        degree: Master's Degree in Engineering
+        date: "2016"
+      - institution: University of Sciences, Rouen
+        area: Medical Engineering
+        degree: Bachelor's Degree
+        date: "2013"
+
+    personal_project:
+      - name: "Bibliochouette — Go backend, REST API, PostgreSQL, React PWA"
+        date: Since 2022
+        summary: "app.bibliochouette.fr"
+        highlights:
+          - "Helps teachers, small organizations and associations manage their libraries easily."
+          - "Designed, operated and continuously evolved since 2022 (Go, REST API,
+            PostgreSQL, React PWA, Docker/Linux), rebuilt from Flutter/Firebase;
+            **approximately 2000 users**."
+
+    languages:
+      - label: French
+        details: Native
+      - label: English
+        details: "Fluent, used daily with international teams"
+
+design:
+  theme: engineeringresumes
+  page:
+    top_margin: 0.5in
+    bottom_margin: 0.5in
+    left_margin: 0.5in
+    right_margin: 0.5in
+  sections:
+    space_between_regular_entries: 0.9em
+  entries:
+    highlights:
+      space_between_items: 0.1em
+
+locale:
+  language: english

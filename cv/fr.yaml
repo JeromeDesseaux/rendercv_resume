@@ -1,0 +1,183 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
+cv:
+  name: Jérôme Desseaux
+  photo: ../assets/moi.jpg
+  headline: Ingénieur Logiciel Backend Senior
+  location: "Rouen"
+  email: jerome.desseaux@gmail.com
+  phone: "+33683104278"
+  website: https://app.bibliochouette.fr
+  social_networks:
+    - network: LinkedIn
+      username: jeromedesseaux
+    - network: GitHub
+      username: JeromeDesseaux
+  custom_connections:
+    - fontawesome_icon: circle-check
+      placeholder: Disponible pour des postes full remote en France et en Europe
+      url:
+  sections:
+    "Profil":
+      - "Ingénieur backend senior (Python) orienté produit avec plus de 10 ans d'expérience dans la
+        conception et l'exploitation de plateformes critiques à fort trafic. Lead
+        hands-on sur l'architecture distribuée, les migrations de monolithes et la
+        fiabilisation de systèmes transactionnels, avec une pratique quotidienne de
+        l'ingénierie assistée par IA (Claude Code). Accompagne des équipes
+        d'ingénierie tout en gardant une forte implication dans la conception et
+        le code. Recherche un poste Senior/Lead Backend full remote, en France ou
+        en Europe."
+
+    "Compétences":
+      - label: Backend
+        details: "**Python** (Django, FastAPI, Flask), API REST (OpenAPI/Swagger), **Go**, C#/.NET"
+      - label: Systèmes distribués
+        details: "**Conception système** (system design), traitement asynchrone,
+          RabbitMQ, Celery, microservices, systèmes événementiels, conception d'API
+          (REST, OAuth), **architecture hexagonale**, DDD, tests (**pytest**),
+          optimisation des performances"
+      - label: Leadership
+        details: "**Pilotage architectural**, cadrage technique, migrations monolithe
+          vers microservices, mentorat, collaboration Produit/Ingénierie transverse"
+      - label: Ingénierie assistée par IA
+        details: "Utilisation quotidienne de **Claude Code** pour la planification
+          d'implémentation, le refactoring et la revue de code ; conception
+          d'applications RAG/LLM"
+      - label: Données & Cloud
+        details: "**PostgreSQL**, SQL, indexation, optimisation de requêtes, cache,
+          Redis ; **Docker**, Kubernetes, CI/CD (GitHub Actions, Jenkins), **Datadog**,
+          Grafana, Sentry, AWS (Amazon Web Services), Azure, GCP (Google Cloud Platform)"
+      - label: Savoir-être
+        details: "Culture produit, livraison agile (Scrum, Kanban), collaboration
+          asynchrone à distance (Slack, Notion, Jira) multi-fuseaux horaires"
+
+    "Expériences":
+      - company: Back Market
+        position: Ingénieur Logiciel Senior (Freelance)
+        start_date: "2025-07"
+        end_date: "2026-03"
+        location: Remote
+        highlights:
+          - Conception et pilotage de la migration progressive
+            du checkout et de l'OMS (Order Management System) d'un monolithe Django
+            vers FastAPI, sans interruption.
+          - Refonte de la gestion des remboursements de l'OMS, faisant passer la
+            précision des montants **de moins de 10 % à près de 100 %** et
+            éliminant une friction client majeure.
+          - Fiabilisation des services de checkout et d'OMS traitant **jusqu'à 1
+            million de requêtes par heure**, via la résilience RabbitMQ/Celery
+            (dead-letter queues) et une synchronisation Redis, réduisant le risque
+            de perte de données en traitement concurrent.
+          - Déploiements sans interruption via GitHub Actions, observabilité Datadog/Grafana.
+          - Collaboration asynchrone Europe/US.
+      - company: Lengow
+        position: Ingénieur Logiciel Senior (Freelance, deux missions)
+        start_date: "2022-09"
+        end_date: "2025-06"
+        location: Remote
+        highlights:
+          - Responsable de l'architecture backend des intégrations Octopia et TikTok
+            Shop sur une plateforme SaaS Django déjà connectée à des centaines de
+            marketplaces.
+          - Refonte du traitement des commandes en arbre n-aire, **réduisant le temps d'exécution de 45 à 3 minutes**.
+          - Pilotage de la modernisation vers CI/CD Docker/Kubernetes/Jenkins,
+            **réduisant l'intégration des nouveaux développeurs d'une semaine à un jour**.
+          - Accompagnement technique d'une équipe allant jusqu'à cinq ingénieurs via des revues de code sur
+            l'architecture et la conception.
+          - Monitoring Datadog et dashboards produit pour l'observabilité en production.
+      - company: CHANEL
+        position: Technical Lead — Plateforme Backend & IA (Freelance)
+        start_date: "2021-03"
+        end_date: "2022-01"
+        location: Remote
+        highlights:
+          - Structuration et encadrement d'une équipe de 3 ingénieurs.
+          - Architecture d'une plateforme IA autour de microservices FastAPI et d'une
+            API REST asynchrone pour le traitement de données vocales sur Azure,
+            permettant une recherche vocale en temps réel, réduisant à presque zéro
+            les temps d'attente en centre d'appels.
+          - Livraison de fonctionnalités backend API (OpenAPI/Swagger) et un client bureau
+            C#/.NET sécurisé par OAuth, en collaboration avec le laboratoire
+            d'innovation de CHANEL à New York ; mise en place du CI/CD et des tests.
+      - company: Opeaz
+        position: Technical Lead (Freelance)
+        start_date: "2020-04"
+        end_date: "2021-02"
+        location: Remote
+        highlights:
+          - Création et encadrement d'une équipe internationale de cinq ingénieurs (France,
+            Brésil, Israël) lors d'une migration monolithe vers microservices.
+          - Découpage du monolithe en backend/frontend stateless, permettant à
+            chaque couche d'évoluer indépendamment en charge et améliorant la
+            cadence de livraison.
+          - Conception de pipelines de traitement de données (web scraping, intégration
+            d'API, flux ETL) et optimisation de l'infrastructure, **réduisant les
+            coûts opérationnels de 30 %**.
+          - Définition de la feuille de route technique et des standards de code,
+            améliorant la cohérence des livraisons durant la phase de croissance
+            précédant la première levée de fonds de l'entreprise (1 million
+            d'euros).
+
+    "Autres Clients":
+      - name: DeepReach
+        date: Août 2021 – Fév. 2022
+        summary: "Migration monolithe vers microservices Python sur AWS, **réponse
+          50 % plus rapide** (2s à 1s) via caching et traitement asynchrone."
+      - name: beta.gouv.fr
+        date: Fév. 2022 – Juin 2022
+        summary: "Backend Go, algorithmes de détection de fraude en environnement
+          financier, optimisation PostgreSQL réduisant le temps de traitement de
+          8 heures à 30 minutes."
+
+    expériences_antérieures:
+      - bullet: "**RATP** — Lead Data Scientist, Freelance (mars 2019 – mars 2020) —
+          Flux de données Python/Spark, API Flask et interfaces Angular pour des
+          données de transport."
+      - bullet: "**Caisse d'Épargne Normandie** — Lead Data Scientist, CDI, Rouen
+          (juil. 2017 – mars 2019) — Python pour l'analyse d'images et la détection
+          d'événements de vie ; prix de l'innovation Groupe BPCE."
+      - bullet: "**Devolis** (oct. 2016 – août 2017) & **Invoke** (janv. 2016 – oct. 2016)
+          — Applications web et facturation en C#/.NET (ASP.NET, Entity Framework,
+          SQL Server) avec frontends Angular, Rouen."
+
+    formation:
+      - institution: INSA Rouen
+        area: Architecture des Systèmes d'Information
+        degree: Diplôme d'Ingénieur
+        date: "2016"
+      - institution: Université des Sciences, Rouen
+        area: Ingénierie Médicale
+        degree: Licence
+        date: "2013"
+
+    projet_personnel:
+      - name: "Bibliochouette — Backend Go, API REST, PostgreSQL, PWA React"
+        date: Depuis 2022
+        summary: "app.bibliochouette.fr"
+        highlights:
+          - "Permet aux enseignants, petites structures et associations de gérer
+            facilement leurs bibliothèques."
+          - "Conception, exploitation et évolution continue depuis 2022 (Go, API REST,
+            PostgreSQL, PWA React, Docker/Linux), réécrite après une première version
+            en Flutter/Firebase ; **environ 2000 utilisateurs**."
+
+    langues:
+      - label: Français
+        details: Langue maternelle
+      - label: Anglais
+        details: "Courant, utilisé quotidiennement avec des équipes internationales"
+
+design:
+  theme: engineeringresumes
+  page:
+    top_margin: 0.5in
+    bottom_margin: 0.5in
+    left_margin: 0.5in
+    right_margin: 0.5in
+  sections:
+    space_between_regular_entries: 0.9em
+  entries:
+    highlights:
+      space_between_items: 0.1em
+
+locale:
+  language: french

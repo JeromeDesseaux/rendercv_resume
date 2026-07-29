@@ -1,0 +1,44 @@
+name: Release CV PDFs
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install RenderCV
+        run: pip install --no-cache-dir "rendercv[full]"
+
+      - name: Render English CV
+        run: >
+          rendercv render cv/en.yaml
+          --pdf-path ../output/Jerome_Desseaux_CV_EN.pdf
+          --dont-generate-markdown --dont-generate-html --dont-generate-png
+
+      - name: Render French CV
+        run: >
+          rendercv render cv/fr.yaml
+          --pdf-path ../output/Jerome_Desseaux_CV_FR.pdf
+          --dont-generate-markdown --dont-generate-html --dont-generate-png
+
+      - name: Create release with PDFs
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            output/Jerome_Desseaux_CV_EN.pdf
+            output/Jerome_Desseaux_CV_FR.pdf
+          generate_release_notes: true
