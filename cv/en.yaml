@@ -2,7 +2,7 @@
 cv:
   name: Jérôme Desseaux
   photo: ../assets/moi.jpg
-  headline: Senior Backend Software Engineer — Python & Distributed Systems
+  headline: Tech Lead / Senior Backend Engineer — Python & Distributed Systems
   location: "Rouen"
   email: jerome.desseaux@gmail.com
   phone: "+33683104278"
@@ -14,23 +14,24 @@ cv:
       username: JeromeDesseaux
   custom_connections:
     - fontawesome_icon: circle-check
-      placeholder: Seeking a full-time permanent role, full-remote in France or Europe
+      placeholder: Open to permanent or long-term freelance — full-remote, France or Europe
       url:
   sections:
     profile:
-      - "Senior backend engineer with **10+ years of Python in production**
-        (Django, FastAPI) on business-critical, high-traffic platforms.
+      - "Senior backend engineer and Tech Lead since 2020, **Python in
+        production since 2017** (Django, FastAPI) on business-critical, high-traffic platforms.
         Specialized in the **incremental modernization of legacy systems**,
         distributed and asynchronous architectures, and the reliability of
         transactional systems (PostgreSQL, messaging, performance). Hands-on
         lead: technical scoping, architecture decisions and mentoring while
         staying close to the code. Also integrates **AI/LLM** features (agents,
-        RAG, MCP) into real business products. Seeking a full-time permanent
-        Senior/Lead Backend role, full-remote in France or Europe."
+        RAG, MCP) into real business products. Open to a **permanent role** or a
+        **long-term freelance contract** as Senior/Lead Backend, full-remote in
+        France or Europe."
 
     "Skills":
       - label: Backend
-        details: "**Python 10+ years** (Django, FastAPI, Flask), REST API design,
+        details: "**Python since 2017** (Django, FastAPI, Flask), REST API design,
           **PostgreSQL** (data modeling, indexing, query optimization), Redis,
           caching"
       - label: Distributed systems
@@ -49,6 +50,9 @@ cv:
       - label: Complementary
         details: "**Go**, C#/.NET; AWS, Azure, GCP; product-embedded AI (**LLM
           agents**, RAG, **MCP**); AI-assisted engineering (Claude Code)"
+      - label: Languages
+        details: "French native; **fluent English**, used daily with international
+          teams"
 
     experience:
       - company: Quitoque
@@ -68,9 +72,21 @@ cv:
             sourcing strategy, **cutting the number of managed articles by 90%**,
             with AI-computed optimal volumes driving the selection of the most
             suitable offers.
+          - Moved business rules to the backend and made product records save in
+            **a single API transaction** instead of ~20 direct database writes;
+            bulk edits of **500 articles in 1.4 s**.
           - Embedding **AI agents**, a business-facing chatbot and **MCP** servers
             (RAG, LLM) at the core of the product, to streamline the purchasing
             and supply teams' work and **cut food waste in warehouses**.
+      - company: Symbiotic Security
+        position: Senior Software Engineer — Backend (Freelance)
+        start_date: "2026-03"
+        end_date: "2026-05"
+        location: Remote
+        highlights:
+          - "Backend **Python** reinforcement on a B2B cybersecurity SaaS in a
+            critical build phase: drove the backend technical roadmap and split a
+            legacy monolith into **DDD**-oriented sub-projects."
       - company: Back Market
         position: Senior Software Engineer (Freelance)
         start_date: "2025-07"
@@ -86,16 +102,16 @@ cv:
           - "Hardened services processing **up to 1 million requests per hour**:
             RabbitMQ/Celery resilience (dead-letter queues), Redis-based
             synchronization, reducing the risk of data loss in concurrent
-            processing."
-          - Zero-downtime deployments (GitHub Actions), Datadog/Grafana
-            observability, asynchronous collaboration across Europe/US.
+            processing; Datadog/Grafana observability, Europe/US collaboration."
       - company: Lengow
-        position: Senior Software Engineer (Freelance, two engagements)
+        position: Senior Software Engineer / Tech Lead (Freelance, two engagements)
         start_date: "2022-09"
         end_date: "2025-06"
         location: Remote
         highlights:
-          - Nearly three years of backend ownership on a **mature Django SaaS
+          - Two engagements (Sep–Dec 2022 — major Django upgrade and move to
+            async; then Dec 2023–Jun 2025), nearly two
+            years of backend ownership on a **mature Django SaaS
             platform** connected to **hundreds of marketplaces** and third-party
             systems; owned the architecture of the Octopia and TikTok Shop
             integrations.
@@ -104,11 +120,11 @@ cv:
           - Led the Docker/Kubernetes/Jenkins CI/CD modernization, **reducing
             developer onboarding from one week to one day**.
           - Mentored a team of up to five engineers (architecture and design
-            reviews); Datadog monitoring and product dashboards.
+            reviews).
       - company: CHANEL
         position: Technical Lead — Backend & AI Platform (Freelance)
         start_date: "2021-03"
-        end_date: "2022-01"
+        end_date: "2021-08"
         location: Remote
         highlights:
           - Structured and led a **team of 3 engineers**; architected an AI
@@ -124,24 +140,21 @@ cv:
         highlights:
           - Built and led an **international team of five engineers** (France,
             Brazil, Israel) through a monolith-to-microservices migration.
-          - Split the monolith into a stateless backend/frontend, letting each
-            layer scale independently and improving release cadence.
+          - Split the monolith into a stateless backend/frontend, each scaling
+            independently.
           - Designed data-processing pipelines (web scraping, API integration,
             ETL) and optimized infrastructure, **cutting operational costs by
             30%**; defined the technical roadmap and coding standards ahead of the
             company's first funding round (€1 million).
 
     "Other Clients":
-      - name: DeepReach
-        date: Aug 2021 – Feb 2022
-        summary: "Monolith-to-microservices migration in **Python** on AWS, **50%
-          faster response times** (2s to 1s) through caching and asynchronous
-          processing."
-      - name: beta.gouv.fr
-        date: Feb 2022 – June 2022
-        summary: "**Go** backend, fraud detection in a financial environment,
-          **PostgreSQL** optimization cutting a processing job **from 8 hours to
-          30 minutes**."
+      - bullet: "**La Poste Groupe** (Jan – Oct 2023) — **PostgreSQL** audit and
+          optimization of an internal IaaS platform, **average load time cut 15x**."
+      - bullet: "**beta.gouv.fr** (Feb – Jun 2022) — **Go** backend, fraud detection
+          in a financial environment; **PostgreSQL** job cut **from 8 hours to 30
+          minutes**."
+      - bullet: "**DeepReach** (Aug 2021 – Feb 2022) — Monolith to **Python**
+          microservices on AWS, **response time halved** (2s to 1s)."
 
     earlier_experience:
       - bullet: "**RATP** — Lead Data Scientist, Freelance (Mar 2019 – Mar 2020) —
@@ -156,12 +169,9 @@ cv:
     personal_product:
       - name: "Bibliochouette — Go backend, REST API, PostgreSQL, React PWA"
         date: Since 2022
-        summary: "app.bibliochouette.fr"
-        highlights:
-          - "Library-management product for teachers, small organizations and
-            associations — designed, operated and maintained **in production
-            since 2022** (Go, REST API, PostgreSQL, React PWA, Docker/Linux);
-            **approximately 2000 users**."
+        summary: "Library management for teachers and associations, designed,
+          operated and maintained **in production since 2022**; **about 2,000
+          users**."
 
     education:
       - institution: INSA Rouen
@@ -173,11 +183,6 @@ cv:
         degree: Bachelor
         date: "2013"
 
-    languages:
-      - label: French
-        details: "Native — **English**: fluent, used daily with international
-          teams"
-
 design:
   theme: engineeringresumes
   page:
@@ -186,7 +191,7 @@ design:
     left_margin: 0.5in
     right_margin: 0.5in
   sections:
-    space_between_regular_entries: 0.45em
+    space_between_regular_entries: 0.35em
   entries:
     highlights:
       space_between_items: 0.1em

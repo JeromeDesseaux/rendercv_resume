@@ -2,7 +2,7 @@
 cv:
   name: Jérôme Desseaux
   photo: ../assets/moi.jpg
-  headline: Ingénieur Logiciel Backend Senior — Python & Architecture
+  headline: Tech Lead / Ingénieur Backend Senior — Python & Architecture
   location: "Rouen"
   email: jerome.desseaux@gmail.com
   phone: "+33683104278"
@@ -14,23 +14,23 @@ cv:
       username: JeromeDesseaux
   custom_connections:
     - fontawesome_icon: circle-check
-      placeholder: Recherche un CDI full remote en France ou en Europe
+      placeholder: Ouvert CDI ou freelance longue durée — full remote, France ou Europe
       url:
   sections:
     "Profil":
-      - "Ingénieur backend senior, **10+ ans de Python en production** (Django,
-        FastAPI) sur des plateformes métier critiques à fort trafic. Spécialisé
+      - "Ingénieur backend senior et Tech Lead depuis 2020, **Python en production
+        depuis 2017** (Django, FastAPI) sur des plateformes métier critiques à fort trafic. Spécialisé
         dans la **modernisation progressive de systèmes legacy**, les architectures
         distribuées et asynchrones, et la fiabilisation de systèmes transactionnels
         (PostgreSQL, messaging, performance). Lead hands-on : cadrage technique,
         décisions d'architecture et mentorat, en restant au contact du code. Sait
         aussi intégrer des fonctionnalités **IA/LLM** (agents, RAG, MCP) dans de
-        vrais produits métier. Recherche un **CDI** Senior/Lead Backend full
-        remote, France ou Europe."
+        vrais produits métier. Ouvert à un **CDI** ou à une **mission freelance
+        longue** en Senior/Lead Backend, full remote, France ou Europe."
 
     "Compétences":
       - label: Backend
-        details: "**Python 10+ ans** (Django, FastAPI, Flask), conception d'API REST,
+        details: "**Python depuis 2017** (Django, FastAPI, Flask), conception d'API REST,
           **PostgreSQL** (modélisation, indexation, optimisation de requêtes),
           Redis, cache"
       - label: Systèmes distribués
@@ -49,6 +49,9 @@ cv:
       - label: Complémentaire
         details: "**Go**, C#/.NET ; AWS, Azure, GCP ; IA appliquée au produit
           (**agents LLM**, RAG, **MCP**) ; ingénierie assistée par IA (Claude Code)"
+      - label: Langues
+        details: "Français natif ; **anglais courant**, utilisé quotidiennement avec
+          des équipes internationales"
 
     "Expériences":
       - company: Quitoque
@@ -68,9 +71,20 @@ cv:
             d'approvisionnement **multi-fournisseurs**, **réduisant de 90 % le
             nombre d'articles gérés**, le calcul par IA des volumes idéaux
             pilotant le choix des offres les plus adaptées.
+          - Règles métier portées par le backend et fiche article enregistrée en
+            **une seule transaction API** au lieu d'une vingtaine d'écritures
+            directes en base ; modification en masse de **500 articles en 1,4 s**.
           - Intégration d'**agents IA**, d'un chatbot métier et de serveurs **MCP**
             (RAG, LLM) au cœur du produit, pour fluidifier le travail des équipes
             achats et supply et **limiter le gaspillage alimentaire en entrepôt**.
+      - company: Symbiotic Security
+        position: Ingénieur Logiciel Senior — Backend (Freelance)
+        start_date: "2026-03"
+        end_date: "2026-05"
+        location: Remote
+        highlights:
+          - "Renfort backend **Python** sur un SaaS B2B de cybersécurité : roadmap
+            technique backend, découpage d'un monolithe legacy en sous-projets **DDD**."
       - company: Back Market
         position: Ingénieur Logiciel Senior (Freelance)
         start_date: "2025-07"
@@ -86,31 +100,29 @@ cv:
           - "Fiabilisation de services traitant **jusqu'à 1 million de requêtes
             par heure** : résilience RabbitMQ/Celery (dead-letter queues),
             synchronisation Redis, réduction du risque de perte de données en
-            traitement concurrent."
-          - Déploiements sans interruption (GitHub Actions), observabilité
-            Datadog/Grafana, collaboration asynchrone Europe/US.
+            traitement concurrent ; observabilité Datadog/Grafana, collaboration
+            Europe/US."
       - company: Lengow
-        position: Ingénieur Logiciel Senior (Freelance, deux missions)
+        position: Ingénieur Logiciel Senior / Tech Lead (Freelance, deux missions)
         start_date: "2022-09"
         end_date: "2025-06"
         location: Remote
         highlights:
-          - Près de trois ans d'ownership backend sur une **plateforme SaaS Django
-            mature** connectée à des **centaines de marketplaces** et systèmes
-            tiers ; responsable de l'architecture des intégrations Octopia et
-            TikTok Shop.
+          - Deux missions (2022 — montée de version Django et passage à
+            l'asynchrone ; puis déc. 2023–juin 2025) sur une
+            **plateforme SaaS Django mature** reliée à des **centaines de
+            marketplaces** ; architecture des intégrations Octopia et TikTok Shop.
           - Refonte du traitement asynchrone des commandes en arbre n-aire,
             **réduisant le temps d'exécution de 45 à 3 minutes**.
           - Pilotage de la modernisation CI/CD Docker/Kubernetes/Jenkins,
             **réduisant l'intégration des nouveaux développeurs d'une semaine à un
             jour**.
           - Mentorat d'une équipe allant jusqu'à cinq ingénieurs (revues
-            d'architecture et de conception) ; monitoring Datadog et dashboards
-            produit.
+            d'architecture et de conception).
       - company: CHANEL
         position: Technical Lead — Plateforme Backend & IA (Freelance)
         start_date: "2021-03"
-        end_date: "2022-01"
+        end_date: "2021-08"
         location: Remote
         highlights:
           - Structuration et encadrement d'une **équipe de 3 ingénieurs** ;
@@ -129,24 +141,22 @@ cv:
           - Création et encadrement d'une **équipe internationale de cinq
             ingénieurs** (France, Brésil, Israël) lors d'une migration monolithe
             vers microservices.
-          - Découpage du monolithe en backend/frontend stateless, chaque couche
-            évoluant indépendamment en charge, améliorant la cadence de livraison.
+          - Découpage du monolithe en backend/frontend stateless, scalables
+            indépendamment.
           - Pipelines de traitement de données (web scraping, intégration d'API,
             ETL) et optimisation de l'infrastructure, **réduisant les coûts
             opérationnels de 30 %** ; feuille de route technique et standards de
             code avant la première levée de fonds (1 M€).
 
     "Autres Clients":
-      - name: DeepReach
-        date: Août 2021 – Fév. 2022
-        summary: "Migration monolithe vers microservices **Python** sur AWS,
-          **réponse 50 % plus rapide** (2s à 1s) via caching et traitement
-          asynchrone."
-      - name: beta.gouv.fr
-        date: Fév. 2022 – Juin 2022
-        summary: "Backend **Go**, détection de fraude en environnement financier,
-          optimisation **PostgreSQL** ramenant un traitement **de 8 heures à 30
-          minutes**."
+      - bullet: "**La Poste Groupe** (janv. – oct. 2023) — Audit et optimisation
+          **PostgreSQL** d'une plateforme IaaS interne, **temps de chargement moyen
+          divisé par 15**."
+      - bullet: "**beta.gouv.fr** (fév. – juin 2022) — Backend **Go**, détection de
+          fraude en environnement financier ; traitement **PostgreSQL** ramené **de
+          8 heures à 30 minutes**."
+      - bullet: "**DeepReach** (août 2021 – fév. 2022) — Monolithe vers microservices
+          **Python** sur AWS, **temps de réponse de 2 s à 1 s**."
 
     expériences_antérieures:
       - bullet: "**RATP** — Lead Data Scientist, Freelance (mars 2019 – mars 2020)
@@ -161,12 +171,9 @@ cv:
     produit_personnel:
       - name: "Bibliochouette — Backend Go, API REST, PostgreSQL, PWA React"
         date: Depuis 2022
-        summary: "app.bibliochouette.fr"
-        highlights:
-          - "Produit de gestion de bibliothèques pour enseignants, petites
-            structures et associations — conçu, exploité et maintenu **en
-            production depuis 2022** (Go, API REST, PostgreSQL, PWA React,
-            Docker/Linux) ; **environ 2000 utilisateurs**."
+        summary: "Gestion de bibliothèques pour enseignants et associations, conçu,
+          exploité et maintenu **en production depuis 2022** ; **environ 2 000
+          utilisateurs**."
 
     formation:
       - institution: INSA Rouen
@@ -178,20 +185,15 @@ cv:
         degree: Licence
         date: "2013"
 
-    langues:
-      - label: Français
-        details: "Langue maternelle — **Anglais** : courant, utilisé quotidiennement
-          avec des équipes internationales"
-
 design:
   theme: engineeringresumes
   page:
-    top_margin: 0.4in
-    bottom_margin: 0.4in
+    top_margin: 0.32in
+    bottom_margin: 0.32in
     left_margin: 0.5in
     right_margin: 0.5in
   sections:
-    space_between_regular_entries: 0.45em
+    space_between_regular_entries: 0.35em
   entries:
     highlights:
       space_between_items: 0.1em
